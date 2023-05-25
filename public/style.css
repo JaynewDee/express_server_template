@@ -1,0 +1,9 @@
+#fetch-posts-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.results-container > div {
+    border-top: 3px solid black;
+}
