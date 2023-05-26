@@ -1,10 +1,12 @@
 // From here our relative root path is /api,
 // as defined in `app.use('/api')` in server.js
 
+// The promises version of fs allows us to use async await syntax
 const fs = require('fs/promises');
 
 const apiRouter = require('express').Router();
 
+// API offering mock data
 const postsUrl = 'https://jsonplaceholder.typicode.com/posts';
 
 //         /api/posts/write
