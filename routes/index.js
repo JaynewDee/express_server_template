@@ -32,10 +32,11 @@ apiRouter.get("/posts/write", async (req, res) => {
 apiRouter.get("/posts/read", async (req, res) => {
     try {
         const json = await fs.readFile('db/posts.json', 'utf8');
-        res.send(json);
 
+        res.send(json);
     } catch (err) {
         console.error(err);
+
         res.status(404).send({
             message: "Failed to read and return posts data."
         })
