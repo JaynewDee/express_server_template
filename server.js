@@ -10,7 +10,6 @@ const urlEncodingOptions = {
     extended: true
 };
 
-// Middleware 
 app.use(express.json());
 app.use(express.urlencoded(urlEncodingOptions));
 app.use(express.static('public'));
